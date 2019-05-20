@@ -15,40 +15,39 @@ public:
     int romanToInt(string s) {
         int ret = 0;
         char prev_c = s[0];
-        string subtracting("");
         for (char& c : s) {
-            if (c == 'M') {
-                ret += 1000;
-                if (prev_c == 'C')
-                    ret -= 200;
-            }
-            if (c == 'D') {
-                ret += 500;
-                if (prev_c == 'C')
-                    ret -= 200;
-            }
-            if (c == 'C') {
-                ret += 100;
-                if (prev_c == 'X')
-                    ret -= 20;
-            }
-            if (c == 'L') {
-                ret += 50;
-                if (prev_c == 'X')
-                    ret -= 20;
-            }
-            if (c == 'X') {
-                ret += 10;
-                if (prev_c == 'I')
-                    ret -= 2;
+            if (c == 'I') {
+                ret += 1;
             }
             if (c == 'V') {
                 ret += 5;
                 if (prev_c == 'I')
                     ret -= 2;
             }
-            if (c == 'I') {
-                ret += 1;
+            if (c == 'X') {
+                ret += 10;
+                if (prev_c == 'I')
+                    ret -= 2;
+            }
+            if (c == 'L') {
+                ret += 50;
+                if (prev_c == 'X')
+                    ret -= 20;
+            }
+            if (c == 'C') {
+                ret += 100;
+                if (prev_c == 'X')
+                    ret -= 20;
+            }
+            if (c == 'D') {
+                ret += 500;
+                if (prev_c == 'C')
+                    ret -= 200;
+            }
+            if (c == 'M') {
+                ret += 1000;
+                if (prev_c == 'C')
+                    ret -= 200;
             }
             prev_c = c;
         }

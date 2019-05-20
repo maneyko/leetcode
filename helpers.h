@@ -37,7 +37,7 @@ ListNode* create_SLL(vector<int>& vec) {
 }
 
 void print_SLL(ListNode* l1) {
-    ListNode* l1_iter = l1;
+    ListNode *l1_iter = l1;
     cout << "(";
     while (l1_iter) {
         cout << l1_iter->val;

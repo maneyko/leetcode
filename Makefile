@@ -15,3 +15,9 @@ p5: p5.cpp
 
 p7: p7.cpp
 	g++ -std=c++11 -o p7 p7.cpp
+
+p9: p9.cpp
+	g++ -std=c++11 -o p9 p9.cpp
+
+p13: p13.cpp
+	g++ -std=c++11 -o p13 p13.cpp

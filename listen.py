@@ -18,8 +18,7 @@ texfile = f'{name}.cpp'
 listener = '/tmp/_listener'
 command = f'make {name} && ./{name}'
 
-if not os.path.exists(listener):
-    with open(listener, 'wb'): pass
+with open(listener, 'wb'): pass
 
 w = WhenChanged([listener], [command])
 print(f"""Going to execute::

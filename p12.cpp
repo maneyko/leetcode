@@ -73,17 +73,18 @@ public:
 };
 
 int main(void) {
+    Solution sol = Solution();
 
     int input1 = 3;
-    string ret1 = Solution().intToRoman(input1);
+    string ret1 = sol.intToRoman(input1);
     int input2 = 4;
-    string ret2 = Solution().intToRoman(input2);
+    string ret2 = sol.intToRoman(input2);
     int input3 = 9;
-    string ret3 = Solution().intToRoman(input3);
+    string ret3 = sol.intToRoman(input3);
     int input4 = 58;
-    string ret4 = Solution().intToRoman(input4);
+    string ret4 = sol.intToRoman(input4);
     int input5 = 1994;
-    string ret5 = Solution().intToRoman(input5);
+    string ret5 = sol.intToRoman(input5);
 
     cout
         << "input1: "

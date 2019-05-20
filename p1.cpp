@@ -37,8 +37,10 @@ public:
 };
 
 int main(void) {
+    Solution sol = Solution();
+
     std::vector<int> nums = {2, 7, 11, 15};
-    std::vector<int> ret = Solution().twoSum(nums, 9);
+    std::vector<int> ret = sol.twoSum(nums, 9);
 
     cout << "ret: ";
     print_ivec(ret);

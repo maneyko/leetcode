@@ -44,13 +44,15 @@ public:
 };
 
 int main(void) {
+    Solution sol = Solution();
+
     int arg1 = -122;
     int arg2 = 241;
 
     cout << "arg1: " << arg1 << endl;
-    cout << "output: " << Solution().reverse(arg1) << endl;
+    cout << "output: " << sol.reverse(arg1) << endl;
     cout << "arg2: " << arg2 << endl;
-    cout << "output: " << Solution().reverse(arg2) << endl;
+    cout << "output: " << sol.reverse(arg2) << endl;
 
     return 0;
 }

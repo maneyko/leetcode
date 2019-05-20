@@ -26,9 +26,10 @@ public:
 };
 
 int main(void) {
+    Solution sol = Solution();
 
     int input1 = 1212;
-    bool ret = Solution().isPalindrome(input1);
+    bool ret = sol.isPalindrome(input1);
 
     cout
         << "input1: "

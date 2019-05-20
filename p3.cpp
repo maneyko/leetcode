@@ -33,16 +33,18 @@ public:
 
 int main(void) {
 
+    Solution sol = Solution();
+
     std::string input1 = "abcabcbb";
     std::string input2 = "bbbbb";
     std::string input3 = "pwwkew";
 
     cout << "input1: " << input1 << endl;
-    cout << "output: " << Solution().lengthOfLongestSubstring(input1) << endl;
+    cout << "output: " << sol.lengthOfLongestSubstring(input1) << endl;
     cout << "input2: " << input2 << endl;
-    cout << "output: " << Solution().lengthOfLongestSubstring(input2) << endl;
+    cout << "output: " << sol.lengthOfLongestSubstring(input2) << endl;
     cout << "input3: " << input3 << endl;
-    cout << "output: " << Solution().lengthOfLongestSubstring(input3) << endl;
+    cout << "output: " << sol.lengthOfLongestSubstring(input3) << endl;
 
     return 0;
 }

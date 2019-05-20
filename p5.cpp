@@ -49,6 +49,7 @@ public:
 };
 
 int main(void) {
+    Solution sol = Solution();
 
     string input1 = "abcdbbfcba";
 
@@ -84,10 +85,10 @@ cukjceothydlgtocukc";
         << "input3: "
         << input3
         << endl;
-    string ret = Solution().longestPalindrome(input3);
+    string ret3 = sol.longestPalindrome(input3);
     cout
-        << "output: "
-        << ret
+        << "ret3: "
+        << ret3
         << endl;
 
     cout << "done." << endl;

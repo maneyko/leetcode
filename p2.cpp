@@ -62,6 +62,8 @@ class Solution {
 };
 
 int main(void) {
+    Solution sol = Solution();
+
     vector<int> l1_v = {2, 4, 3},
                 l2_v = {5, 6, 4};
 
@@ -72,8 +74,7 @@ int main(void) {
     cout << "l2: ";
     print_SLL(l2);
 
-
-    ListNode *ret = Solution().addTwoNumbers(l1, l2);
+    ListNode *ret = sol.addTwoNumbers(l1, l2);
 
     cout << "ret: ";
     print_SLL(ret);

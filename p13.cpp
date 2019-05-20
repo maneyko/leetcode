@@ -56,17 +56,18 @@ public:
 };
 
 int main(void) {
+    Solution sol = Solution();
 
     string input1 = "III";
-    int ret1 = Solution().romanToInt(input1);
+    int ret1 = sol.romanToInt(input1);
     string input2 = "IV";
-    int ret2 = Solution().romanToInt(input2);
+    int ret2 = sol.romanToInt(input2);
     string input3 = "IX";
-    int ret3 = Solution().romanToInt(input3);
+    int ret3 = sol.romanToInt(input3);
     string input4 = "LVIII";
-    int ret4 = Solution().romanToInt(input4);
+    int ret4 = sol.romanToInt(input4);
     string input5 = "MCMXCIV";
-    int ret5 = Solution().romanToInt(input5);
+    int ret5 = sol.romanToInt(input5);
 
     cout
         << "input1: "

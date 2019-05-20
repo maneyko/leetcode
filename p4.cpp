@@ -37,6 +37,8 @@ public:
 };
 
 int main(void) {
+    Solution sol = Solution();
+
     vector<int> nums1 = {1, 2},
                 nums2 = {3, 4};
 
@@ -44,7 +46,10 @@ int main(void) {
     print_ivec(nums1);
     cout << "nums2: ";
     print_ivec(nums2);
-    cout << "output: " << Solution().findMedianSortedArrays(nums1, nums2) << endl;
+    cout
+        << "output: "
+        << sol.findMedianSortedArrays(nums1, nums2)
+        << endl;
 
     return 0;
 }

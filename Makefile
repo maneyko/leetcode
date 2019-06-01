@@ -10,3 +10,5 @@ all: $(PROGS)
 %: %.cpp
 	$(CC) $(CFLAGS) $< -o $@
 
+clean:
+	rm -rf *.o *[0-9]$

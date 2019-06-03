@@ -7,6 +7,7 @@
 #include <iostream>
 #include <vector>
 #include <limits>
+#include <cstdlib>
 
 using std::cout;
 using std::endl;
@@ -14,21 +15,19 @@ using std::vector;
 using std::numeric_limits;
 
 class Solution {
-
-    double c, ans = 1;
     public:
         double myPow(double x, int n) {
-            if (n == 0)
-                return 1;
-            if (n == 1)
-                return x;
-            if (n == -1)
-                return 1/x;
-            if (n > 0)
-                return x * myPow(x, n-1);
+            long l = std::labs(n);
+            double res = 1;
+            while (l > 0) {
+                if (l % 2)
+                    res *= x;
+                x *= x;
+                l /= 2;
+            }
             if (n < 0)
-                return 1/x * myPow(x, n+1);
-            return -1;
+                res = 1/res;
+            return res;
         }
 };
 
